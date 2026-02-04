@@ -1,0 +1,23 @@
+While AWS Lambda handles the automation and integration with external systems like Box, Smartsheet, and SharePoint, the AI aspect primarily comes from Amazon Lex itself. Here's how:
+
+
+
+
+
+Natural Language Understanding (NLU): This is the core AI capability that Amazon Lex provides. Instead of an administrator needing to use a complex interface or write scripts to initiate synchronization tasks or query data, they can simply speak or type their request in natural language. Lex uses AI to understand the user's intent (e.g., "Sync user X's data," "What files does N have permission to?") and extract relevant information (slots like user names, application types, file types).
+
+
+
+Conversational Interface: The AI makes the interaction intuitive and accessible. It can guide the user through a conversation, ask clarifying questions if needed, and provide responses in a human-like manner. This significantly lowers the barrier for administrators to perform complex data management tasks.
+
+
+
+Intelligent Task Routing: Based on the user's input, Lex's AI determines which specific task (intent) the user wants to accomplish and then routes that request to the appropriate AWS Lambda function for execution. This intelligent routing is a key part of the AI at play.
+
+
+
+Efficiency and Accessibility: The AI in Lex transforms what would otherwise be a manual, technical process into a simple conversational exchange. This makes the synchronization and data querying processes more efficient and accessible to a wider range of users, even those without deep technical expertise.
+
+So, in essence, the AI is what allows the bot to understand and respond to human language, making the powerful automation capabilities of AWS Lambda easy to use and interact with. It's the "brain" that interprets your requests and translates them into actions.
+
+Your current
