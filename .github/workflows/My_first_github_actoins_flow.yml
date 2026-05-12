@@ -6,6 +6,9 @@ jobs:
     First-job:
      runs-on: ubuntu-latest
      steps:
+     - name: Checkout Repo
+       uses: actions/checkout@v6
+       
      - name: Welcome page
        run: echo "My first workflow using github actions"
 
