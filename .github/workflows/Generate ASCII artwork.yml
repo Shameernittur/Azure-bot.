@@ -11,10 +11,11 @@ jobs:
 
      - name: List repo files
        run: ls -ltra
-       
+
      - name: Executing shell script
-       run: ./ascii-scropt.sh  
+       run: |
+        chmod +x ascii-scropt.sh
+        ./ascii-scropt.sh
        
-     
 #   - name: Read file
 #    run : cat README.md
