@@ -14,8 +14,8 @@ jobs:
 
      - name: Executing shell script
        run: |
-        chmod +x ascii-scropt.sh
-        ./ascii-scropt.sh
+        chmod +x ascii-script.sh
+        ./ascii-script.sh
        
 #   - name: Read file
 #    run : cat README.md
