@@ -6,20 +6,17 @@ on:
  
 jobs: 
     deploy-on-ubuntu:
-        runs-on: ubuntu-latest
+        strategy:
+          matrix:
+            os: [ubuntu-latest, windows-latest, ubuntu-20.04]
+            images: [hello-world,nginx]
+        runs-on: ${{matrix.os}}
         steps:
             - name: echo docker details
               run: docker info
 
-            - name: run images
-              run: docker run hello-world
+            - name: run image on ${{matrix.os}}
+              run: docker run ${{matrix.images}}
               
-    deploy-on-windows: 
-        runs-on: windows-latest
-        steps:
-            - name: echo docker details
-              run: docker info
 
-            - name: run images
-              run: docker run hello-world
          
